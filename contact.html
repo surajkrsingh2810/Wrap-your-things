@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='#'><img src='logo.png'/></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="infrastructure.html">Infrastructure</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+        </header>
+
+
+        <div class="detail">
+            <div class="info">
+                <label> Contact Info</label><br>
+                <pre> Virat Laminator Private Limited</pre>
+                 <p><i class="fa-solid fa-location-pin"></i>  Basila Piska, Nagri, Ranchi<br>
+                  <i class="fa-solid fa-phone"></i>  +91 8292766229<br>
+                  <i class="fa-solid fa-envelope"></i>  viratlaminator@gmail.com</p>
+            </div>
+            <div class="con">
+                <p>Contact Us</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="11ef1d92-5673-4284-80c9-44c8500ea2f0">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" class="in"  required><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" class="in" required><br><br>
+
+                    <label for="contact">contact No.</label><br>
+                    <input type="number" id="contact" name="contact" class="in" required><br><br>
+                    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" class="in" required></textarea><br><br>
+                    
+                    <input type="submit" value="Submit" class="btn">
+                </form>
+            </div>
+        </div>
+
+        <div class="box"> 
+            <div class="locat">
+                <label>Company Location</label><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3664.258688155512!2d85.1504362753224!3d23.306371178975823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDE4JzIyLjkiTiA4NcKwMDknMTAuOCJF!5e0!3m2!1sen!2sin!4v1722149476500!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="company">
+            <label>Company </label>
+            <img src="company.jpg" alt="">
+        </div>
+        </div>
+
+        <div class="footer">
+            <div class="ltd">
+               <img src="logo.png" >
+    <pre><b>Manufacturer of High Quality
+Printed Packaging Material</b></pre>
+            </div>
+            <div class="contact">
+                <h5>Contact Info</h5>
+     <pre><i class="fa-solid fa-location-pin"></i>  Basila Piska, Nagri, Ranchi
+<i class="fa-solid fa-phone"></i>  +91 8292766229
+<i class="fa-solid fa-envelope"></i>  viratlaminator@gmail.com</pre>
+            </div>
+         </div>
+         <div class="end">
+            <p>© 2020 Virat Laminators Pvt. Ltd. All Rights Reserved.</p>
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
