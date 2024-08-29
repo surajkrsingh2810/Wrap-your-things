@@ -98,8 +98,7 @@ body {
     gap: 6%;
 }
 .info{
-    padding: 2%;
-    
+    padding:5%;
     display: flex;
     align-items: center;
     justify-content: center;
