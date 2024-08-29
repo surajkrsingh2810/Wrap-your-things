@@ -112,7 +112,7 @@ body {
     overflow: hidden;
 }
 .con{
-    margine:2%;
+    margine-top:2%;
     display: flex;
     align-items: center;
     justify-content: center;
