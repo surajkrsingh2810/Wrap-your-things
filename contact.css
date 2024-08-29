@@ -152,9 +152,10 @@ body {
 @media only screen and (max-width: 1000px){
     .detail{
         flex-direction: column;
-        gap:10px;
+        
     }
     .info{
+        margine-bottom:3%;
         width: 94%;
         height: auto;
     }
