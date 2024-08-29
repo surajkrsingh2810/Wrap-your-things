@@ -84,6 +84,7 @@ body {
     .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {right: 0;}
 }
+
 .detail{
     padding: 2%;
     display: flex;
@@ -95,7 +96,6 @@ body {
     overflow: hidden;
 }
 .info{
-    padding: 1%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +105,7 @@ body {
     height: auto;
     background-color: lightseagreen;
     border-radius: 20px;
-    margin:1%;
+    overflow: hidden;
 }
 .con{
     display: flex;
@@ -117,8 +117,8 @@ body {
     background-color: lightseagreen;
     border-radius: 20px;
     height: 100%;
+    overflow: hidden;
     margin: 1%;
-    padding: 1%;
 }
 .info label{
     color:white;
@@ -128,10 +128,7 @@ body {
     color: black;
     font-size: 170%;
 }
-.info pre{
-    color: black;
-    font-size: 170%;
-}
+
 .con p{
     color:white;
     font-size: 170%;
@@ -155,9 +152,11 @@ body {
     }
     .info{
         width: 94%;
+        height: auto;
     }
     .con{
         width: 94%;
+        height: auto;
     }
 }
 
