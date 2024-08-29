@@ -1,331 +1,90 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.all{
-    overflow: hidden;
-}
-body {
-    background-color: #024950;
-}
-.nav-bar {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    position: relative;
-    background-color: #003135;
-    padding-left:5% ;
-    padding-right:5% ;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-bottom: 20px;
-}
-.logo img {width: 100px;}
-.menu {display: flex;}
-.menu li {padding-left: 30px;}
-.menu li a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    transition: 0.15s ease-in-out;
-    position: relative;
-    text-transform: uppercase;
-}
-.menu li a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: #003135;
-    transition: 0.15s ease-in-out;
-}
-
-.menu li a:hover:after {
-    width: 100%;}
-.open-menu , .close-menu {
-    position: absolute;
-    color: black;
-    cursor: pointer;
-    font-size: 2.0rem;
-    display: none;
-}
-.open-menu {
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-.close-menu {
-    top: 20px;
-    right: 20px;
-}
-#check {display: none;}
-@media(max-width: 680px){
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        background-color: #003135;
-        transition: all 0.2s ease-in-out;
-    }
-    .menu li {margin-top: 40px;}
-    .menu li a {padding: 10px;}
-    .open-menu , .close-menu {display: block;}
-    #check:checked ~ .menu {right: 0;}
-}
-
-.detail{
-    padding: 1%;
-    padding-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    background-color: #003135;
-    overflow: hidden;
-    gap: 6%;
-}
-.info{
-    padding: 2%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 45%;
-    height: auto;
-    background-color: lightseagreen;
-    border-radius: 20px;
-    overflow: hidden;
-}
-.con{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 45%;
-    background-color: lightseagreen;
-    border-radius: 20px;
-    height: 100%;
-    overflow: hidden;
-}
-.info label{
-    color:white;
-    font-size: 180%;
-}
-.info p{
-    color: black;
-    font-size: 170%;
-}
-
-.con p{
-    color:white;
-    font-size: 170%;
-}
-.con form{
-    font-size: 20px;
-     color: black;
-}
-.in{
-    border-radius: 5px;
-}
-.btn{
-    border-radius: 5px;
-    background-color: #024950;
-    width: 70px;
-}
-
-@media only screen and (max-width: 1000px){
-    .detail{
-        flex-direction: column;
-    }
-    .info{
-        width: 94%;
-        height: auto;
-    }
-    .con{
-        width: 94%;
-        height: auto;
-    }
-}
-
-.box{
-    background-color: #003135;
-    width: 100%;
-    height: max-content;
-    display: flex;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 2%;
-}
-.locat{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 50%;
-    overflow: hidden;
-    align-content: center;
-        justify-content: center;
-        
-}
-.company{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    overflow: hidden;
-    align-content: center;
-     justify-content: center;
-    width: 50%;
-   
-}
-.locat label{
-    border-radius: 15px;
-    display: flex;
-      justify-content: center;
-      align-items: center;
-    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.5);
-        color:white;
-        font-size: 30px;
-        margin: 1%;
-}
-.locat iframe{
-    width: 80%;
-    height: 80%;
-}
-.company label{
-    border-radius: 15px;
-    margin-bottom: 4%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-            box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.5);
-        color:white;
-        font-size: 30px;
-}
-.company img{
-    width: 80%;
-    height: 80%;
-}
-
-@media only screen and (max-width: 1000px){
-    .box{
-        flex-direction: column;
-    }
-    .locat{
-        width: 100%;
-        height: auto;
-    }
-    .company{
-        width: 100%;
-    }
-    .company label{
-        margin: 4%;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='#'><img src='logo.png'/></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="infrastructure.html">Infrastructure</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+        </header>
 
 
+        <div class="detail">
+            <div class="info">
+                <label> Contact Info</label><br>
+                <p> Virat Laminator Private Limited</p>
+                 <p><i class="fa-solid fa-location-pin"></i>  Basila Piska, Nagri, Ranchi<br>
+                  <i class="fa-solid fa-phone"></i>  +91 8292766229<br>
+                  <i class="fa-solid fa-envelope"></i>  viratlaminator@gmail.com</p>
+            </div>
+            <div class="con">
+                <p>Contact Us</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="11ef1d92-5673-4284-80c9-44c8500ea2f0">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" class="in"  required><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" class="in" required><br><br>
 
+                    <label for="contact">contact No.</label><br>
+                    <input type="number" id="contact" name="contact" class="in" required><br><br>
+                    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" class="in" required></textarea><br><br>
+                    
+                    <input type="submit" value="Submit" class="btn">
+                </form>
+            </div>
+        </div>
 
-.footer{
-    padding: 1%;
-    display: flex;
-    background-color:#003135;
-    margin-top: 5%;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.ltd{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.ltd img{
-    width: 150px;
-    
-}
-.ltd pre{
-    font-size: 15px;
-    color: #0FA4AF;
-    
-}
-.contact{
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.contact h5{
-    border-radius: 15px;
-    display: flex;
-    font-size: 25px;
-    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.5);
-    align-items: center;
-    justify-content: center;
-    color: #AFDDE5;
+        <div class="box"> 
+            <div class="locat">
+                <label>Company Location</label><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3664.258688155512!2d85.1504362753224!3d23.306371178975823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDE4JzIyLjkiTiA4NcKwMDknMTAuOCJF!5e0!3m2!1sen!2sin!4v1722149476500!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="company">
+            <label>Company </label>
+            <img src="company.jpg" alt="">
+        </div>
+        </div>
 
-}
-.contact pre{
-    color: #0FA4AF;
-    font-size: 18px;
-}
-@media only screen and (max-width: 1000px) {
-    .footer{
-     flex-wrap: wrap;
-     flex-direction: row;
-     padding: 2%;
-    
-    }
-    .ltd{
-      display: flex;
-       width: 100%;
-       align-items: center;
-       justify-content: center;
-    }
-    .contact{
-     margin: 10%;
-     width: 100%;
-     justify-content: center;
-      align-items: center;
-    }
- }
-.end {
-    display: flex;
-    
-    margin-top: 10px;
-}
-.end p{
-    background-color: #003135;
-    width: 100%;
-    display: flex;
-    font-size: 25px;
-    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.5);
-    align-items: center;
-    justify-content: center;
-    color: #AFDDE5;
-    justify-content: center;
-      align-items: center;
-}
-
-
-
+        <div class="footer">
+            <div class="ltd">
+               <img src="logo.png" >
+    <pre><b>Manufacturer of High Quality
+Printed Packaging Material</b></pre>
+            </div>
+            <div class="contact">
+                <h5>Contact Info</h5>
+     <pre><i class="fa-solid fa-location-pin"></i>  Basila Piska, Nagri, Ranchi
+<i class="fa-solid fa-phone"></i>  +91 8292766229
+<i class="fa-solid fa-envelope"></i>  viratlaminator@gmail.com</pre>
+            </div>
+         </div>
+         <div class="end">
+            <p>© 2020 Virat Laminators Pvt. Ltd. All Rights Reserved.</p>
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
