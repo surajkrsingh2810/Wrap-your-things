@@ -98,6 +98,7 @@ body {
     flex-direction: column;
     width: 50%;
     height: 100%;
+    margine:2%;
 }
 .history label{
     border-radius: 15px;
