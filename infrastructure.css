@@ -98,7 +98,7 @@ body {
     flex-direction: column;
     width: 50%;
     height: 100%;
-    margine:2%;
+    margin:2%;
 }
 .history label{
     border-radius: 15px;
@@ -136,7 +136,7 @@ body {
     }
     .history{
         height: max-content;
-        margin: 4%;
+        margin: 2%;
         width: 100%;
     }
     .img-box{
